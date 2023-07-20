@@ -1,0 +1,593 @@
+/*--------------------------------------------------------------
+                        General
+--------------------------------------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    --bs-gutter-x: 0rem !important;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+}
+
+body,
+header,
+main,
+footer {
+    position: relative;
+}
+
+section {
+    margin: 1.5rem 0;
+}
+
+.title-section {
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+.title-section span {
+    position: absolute;
+    top: 46px;
+    color: rgba(14, 29, 52, 0.06);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 56px;
+    text-transform: uppercase;
+    line-height: 0;
+}
+
+.title-section h4 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #001973;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.fade-up {
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s, transform 2s;
+}
+
+.fade-up.aparecer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn-scroll-top {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    right: 20px;
+    padding: 8px;
+    background: #001973c0;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    transition: background .3s ease-in-out !important;
+}
+
+#btn-scroll-top-scroll {
+    bottom: 20px;
+}
+
+#btn-scroll-top-scroll:hover {
+    background: #001973;
+}
+
+#btn-scroll-top-whatsapp {
+    bottom: 70px;
+}
+
+#btn-scroll-top-whatsapp:hover {
+    background: #25D366;
+}
+
+#btn-scroll-top-facebook {
+    bottom: 120px;
+}
+
+#btn-scroll-top-facebook:hover {
+    background: #1877F2;
+}
+
+#btn-scroll-top-instagram {
+    bottom: 170px;
+}
+
+#btn-scroll-top-instagram:hover {
+    background: linear-gradient(135deg, #833AB4, #C13584, #FD1D1D);
+}
+
+.btn-scroll-top.mostrar,
+.btn-scroll-top.aparecer {
+    display: block;
+}
+
+/*--------------------------------------------------------------
+                        Header
+--------------------------------------------------------------*/
+
+header {
+    padding: 10px 0;
+    background: #1e5b7a;
+}
+
+header li {
+    position: relative;
+}
+
+header a {
+    border: 1px solid transparent;
+    padding: 5px;
+    position: relative;
+    width: 7.2em;
+    height: 2em;
+    transition: 0.5s;
+    font-size: 12px;
+    border-radius: 0.4em;
+    display: flex;
+}
+
+header a p {
+    position: absolute;
+    top: 0.2em;
+    left: 1.2em;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    color: #fff;
+}
+
+header a i {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff;
+    color: #fff;
+}
+
+header a:hover p {
+    left: 0.6em;
+    color: #fff
+}
+
+header a:hover i {
+    opacity: 1;
+}
+
+header a.header-link-instagram:hover {
+    background: linear-gradient(135deg, #833AB4, #C13584, #FD1D1D);
+    border-color: #C13584;
+}
+
+header a.header-link-facebook:hover {
+    background-color: #1877F2;
+    border-color: #1877F2;
+}
+
+header a.header-link-whatsapp:hover {
+    background-color: #25D366;
+    border-color: #25D366;
+}
+
+/*--------------------------------------------------------------
+                Nav
+--------------------------------------------------------------*/
+
+nav {
+    top: 0;
+    z-index: 100;
+    position: sticky !important;
+    background-color: #001973c0;
+    transition: background-color 0.3s ease;
+}
+
+.nav-scrolled {
+    background-color: #001973;
+}
+
+nav .container-fluid > a {
+    font-weight: 900;
+}
+
+nav a {
+    color: #fff !important;
+}
+
+/*--------------------------------------------------------------
+                Main
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+                Hero Section
+--------------------------------------------------------------*/
+
+#hero {
+    top: -72px;
+    height: 80vh;
+    margin-top: 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/hero-bg.png);
+}
+
+.hero-title {
+    position: absolute;
+    transform: translate(20%, 250%);
+}
+
+.hero-title h1,
+.hero-title h2 {
+    color: #fff;
+}
+
+.hero-title h2 span {
+    color: #1D5C7A;
+}
+
+.cards-hero {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    justify-content: space-around;
+    transform: translateY(-100px);
+}
+
+.cards-hero input.fade-up {
+    padding: 10px;
+}
+
+/*--------------------------------------------------------------
+                Marks Section
+--------------------------------------------------------------*/
+
+#marks-list .row>div {
+    margin: 2rem 0;
+}
+
+#marks-list .row .card {
+    width: 330px;
+    margin: auto;
+    height: 180px;
+    box-shadow: 0;
+    position: relative;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: box-shadow .1s ease-in-out;
+}
+
+#marks-list .row .card:hover {
+    filter: grayscale(25%);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .5);
+}
+
+.card-samsung {
+    background-image: url(../img/samsung.jpg);
+}
+
+.card-apple {
+    background-image: url(../img/apple.jpg);
+}
+
+.card-huawei {
+    background-image: url(../img/huawei.jpg);
+}
+
+.card-motorola {
+    background-image: url(../img/motorola.jpg);
+}
+
+.card-xiaomi {
+    background-image: url(../img/xiaomi.jpg);
+}
+
+.card-lenovo {
+    background-image: url(../img/lenovo.jpg);
+}
+
+#marks-list .row .card h4 {
+    left: 0;
+    margin: 0;
+    bottom: -1px;
+    padding: 10px;
+    position: absolute;
+    text-transform: uppercase;
+    background-color: #CECDD2;
+    border-radius: 0 13px 0 13px;
+}
+
+/*--------------------------------------------------------------
+                Splide Section
+--------------------------------------------------------------*/
+
+#splide-section {
+    padding-bottom: 3rem;
+}
+
+#splide-section .card {
+    margin: 10px 15px;
+}
+
+#splide-section .card .card-header {
+    padding: 0;
+}
+
+#splide-section .card .card-header img {
+    width: 100%;
+}
+
+#splide-section .splide__pagination {
+    bottom: -1.6em;
+    left: 0;
+    padding: 0 1em;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.splide__pagination__page {
+    background: #fff;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    display: inline-block;
+    height: 8px;
+    margin: 3px;
+    opacity: .7;
+    padding: 0;
+    position: relative;
+    transition: transform .2s linear;
+    width: 8px;
+}
+
+.splide__pagination__page.is-active {
+    background: #fff;
+    transform: scale(1.5);
+    border: solid 2px #001973;
+    z-index: 1;
+}
+
+/*--------------------------------------------------------------
+                Category List Section
+--------------------------------------------------------------*/
+
+#products-flters {
+    padding: 0;
+    margin: 0 auto 35px auto;
+    list-style: none;
+    text-align: center;
+    background: #fff;
+    border: solid 1px #153E52;
+    border-radius: 50px;
+    padding: 2px 15px;
+}
+
+.filter {
+    top: 100px;
+    padding: 10px;
+    position: sticky;
+    border-radius: 15px;
+    background-color: #fff;
+    border: solid 1px #1d5672;
+    box-shadow: inset 5px 5px 5px #c4c4c4, inset -5px -5px 5px #ffffff;
+}
+
+.filter .form-select-sm {
+    box-shadow: inset 5px 5px 5px #c4c4c4, inset -5px -5px 5px #ffffff;
+}
+
+#products-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px 8px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #727679;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#products-flters li:hover,
+#products-flters li.filter-active {
+    color: #1d5672;
+}
+
+#products-flters li:last-child {
+    margin-right: 0;
+}
+
+.product-wrap {
+    width: 250px;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: solid #153E52 1px;
+    box-shadow: 0;
+    transition: box-shadow .2s ease-in-out;
+}
+
+.product-wrap:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .5);
+}
+
+.product-container .card-header {
+    position: relative;
+}
+
+.product-container .card-header img {
+    width: 100%;
+    position: relative;
+}
+
+.product-container .card-header h5 {
+    margin: 0;
+    color: #fff;
+    padding: 4px 8px;
+    display: inline-block;
+    background-color: #153E52;
+    border-bottom-right-radius: 5px;
+}
+
+.product-container .card-body {
+    margin-top: 10px;
+    text-align: start;
+    padding-left: 15px;
+}
+
+.product-title {
+    position: relative;
+}
+
+.product-title small {
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding-right: 5px;
+}
+
+.product-links {
+    margin-bottom: 16px;
+}
+
+.product-links a {
+    background: #1e5b7a;
+    color: #fff;
+    border: solid #fff 1px;
+}
+
+.product-links a:hover {
+    background: #fff;
+    color: #1e5b7a;
+    border: solid #1e5b7a 1px;
+}
+
+.product-links {
+    text-align: center;
+}
+
+/*--------------------------------------------------------------
+                Services Section
+--------------------------------------------------------------*/
+
+#services-section {
+    padding: 3rem 0;
+}
+
+#services-section .row .col {
+    display: flex;
+    justify-content: center;
+}
+
+#services-section .card {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: solid #000 1px;
+    transition: height .8s ease-in-out, border-radius .5s ease-in-out;
+}
+
+#services-section .card:hover {
+    border-radius: 50% !important;
+}
+
+#services-section .card .card-header {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+#services-section .card .card-header,
+#services-section .card img {
+    width: 100%;
+}
+
+#services-section .card img {
+    border-radius: 15px;
+    filter: grayscale(100%);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: border-radius .5s ease-in-out, filter 1.2s ease-in-out;
+}
+
+#services-section .card:hover img {
+    border-radius: 5px;
+    filter: grayscale(0%);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#services-section .card .card-body {
+    padding: 0 var(--bs-card-spacer-x);
+    ;
+}
+
+#services-section .card .card-body h5 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    transform: translateY(-70px);
+    transition: transform 1s ease-in-out, color .8s ease-in-out, padding 1s ease-in-out;
+}
+
+#services-section .card:hover .card-body h5 {
+    padding: 10px 0;
+    text-align: center;
+    transform: translateY(-48px);
+}
+
+#services-section .card .card-body p {
+    opacity: 0;
+    text-align: center;
+    transform: translateY(-40px);
+    transition: opacity 2s ease-in-out;
+}
+
+#services-section .card:hover .card-body p {
+    opacity: 1;
+}
+
+#services-section .card:not(:hover) .card-body p {
+    transition: opacity .1s ease-in-out;
+    /* Tiempo de transición al quitar el hover */
+}
+
+/*--------------------------------------------------------------
+                Footer
+--------------------------------------------------------------*/
+
+footer {
+    background-color: greenyellow;
+}
