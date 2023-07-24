@@ -92,7 +92,7 @@ section {
 }
 
 #btn-scroll-top-scroll:hover {
-    background: #001973;
+    background: #000000;
 }
 
 #btn-scroll-top-whatsapp {
@@ -214,6 +214,12 @@ nav {
 
 nav .container-fluid > a {
     font-weight: 900;
+}
+
+nav .container-fluid > a img {
+    height: 30px;
+    /*border-radius: 50%;*/
+    margin-left: 10px;
 }
 
 nav a {
@@ -589,5 +595,14 @@ nav a {
 --------------------------------------------------------------*/
 
 footer {
-    background-color: greenyellow;
+    background-color: #001973;
+    padding: 30px 10px;
+}
+
+footer ul a {
+    color: #fff !important;
+}
+
+.image-footer {
+    max-height: 80px;
 }
