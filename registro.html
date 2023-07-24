@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/register.css">
+    <link rel="icon" href="assets/img/logo/techpro.jpeg">
+    <!-- <script src="assets/js/register.js"></script> -->
+    <title>TechPro</title>
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="nombre"/>
+                <input type="text" placeholder="apellido"/>
+                <input type="text" placeholder="email"/>
+                <input type="text" placeholder="telefono"/>
+                <input type="password" placeholder="contraseña"/>
+                <input type="password" placeholder="confirmar contraseña"/>
+                <button>Crear</button>
+                <p class="message">Ya estás registrado? <a href="#">Iniciar Sesión</a></p>
+            </form>
+            <form class="login-form">
+                <input type="text" placeholder="email"/>
+                <input type="password" placeholder="contraseña"/>
+                <button>Ingresar</button>
+                <p class="message">No estás registrado? <a href="#">Crea una cuenta</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    /*-----========== Cambio de registro =========-----*/
+        $(document).ready(function () {
+            // Oculta el formulario de registro al cargar la página
+            $(".register-form").hide();
+    
+            // Evento clic para el enlace "Crea una cuenta"
+            $(".login-form .message a").on("click", function (event) {
+                event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+                $(".login-form").hide(); // Oculta el formulario de inicio de sesión
+                $(".register-form").show(); // Muestra el formulario de registro
+            });
+    
+            // Evento clic para el enlace "Iniciar Sesión"
+            $(".register-form .message a").on("click", function (event) {
+                event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+                $(".register-form").hide(); // Oculta el formulario de registro
+                $(".login-form").show(); // Muestra el formulario de inicio de sesión
+            });
+        });
+
+    /*-----========== =========-----*/
+    </script>
+</body>
+</html>
