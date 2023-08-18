@@ -258,6 +258,7 @@ nav a {
 
 .hero-title h2 span {
     color: #1D5C7A;
+    font-size: 50px;
 }
 
 .cards-hero {
@@ -409,7 +410,14 @@ nav a {
 }
 
 .filter .form-select-sm {
+    padding: 8px 5px;
+    margin-bottom: 1rem;
     box-shadow: inset 5px 5px 5px #c4c4c4, inset -5px -5px 5px #ffffff;
+}
+
+.filter form button {
+    background-color: #1e5b7a;
+    color: #fff;
 }
 
 #products-flters li {
@@ -601,6 +609,18 @@ footer {
 
 footer ul a {
     color: #fff !important;
+}
+
+footer .row .col-1,
+footer .row .col-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer,
+.map-footer {
+    text-align: center;
 }
 
 .image-footer {
