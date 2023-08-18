@@ -1,0 +1,148 @@
+/*--------------------------------------------------------------
+                        General
+--------------------------------------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    --bs-gutter-x: 0rem !important;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+}
+
+/*--------------------------------------------------------------
+                Nav
+--------------------------------------------------------------*/
+
+nav {
+    top: 0;
+    z-index: 100;
+    padding: 20px !important  ;
+    position: sticky !important;
+    background-color: #001973c0;
+    transition: background-color 0.3s ease;
+}
+
+nav .container-fluid > a {
+    font-weight: 900;
+}
+
+nav .container-fluid > a img {
+    height: 30px;
+    /*border-radius: 50%;*/
+    margin-left: 10px;
+}
+
+.navbar-collapse ul {
+    width: 100%;
+}
+
+.navbar-collapse#navbarSupportedContent ul {
+    justify-content: center !important;
+}
+
+.navbar-collapse:last-child {
+    width: fit-content;
+}
+
+.navbar-collapse:last-child ul {
+    justify-content: end;
+}
+
+.navbar-collapse:last-child ul .dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: -50px;
+    margin-top: var(--bs-dropdown-spacer);
+}
+
+nav a {
+    color: #fff !important;
+}
+
+.dropdown-menu a {
+    color: #000 !important;
+}
+
+/*--------------------------------------------------------------
+                Section
+--------------------------------------------------------------*/
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+/*--------------------------------------------------------------
+                Aside
+--------------------------------------------------------------*/
+
+aside {
+    width: 20% !important;
+    height: 100%;
+    padding: 10px !important;
+    background-color: #07637A;
+}
+
+aside .position-fixed > div {
+    position: relative;
+}
+
+aside a {
+    color: #fff !important;
+}
+
+/*--------------------------------------------------------------
+                Article
+--------------------------------------------------------------*/
+
+article {
+    width: 80% !important;
+    height: 100%;
+    padding: 0 20px !important;
+}
+
+article h3 {
+    margin: 20px 0 20px 30px;
+}
+
+article .elemento {
+    display: flex;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+    align-items: center;
+}
+
+article .elemento .col-8 {
+    padding-left: 60px;
+}
+
+article .elemento p {
+    margin: 0;
+}
+
+article .elemento span.valor {
+    margin: 0 20px;
+}
+
+article .elemento button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    border: solid #808080;
+}
+
+article .elemento button.btn-disminuir {
+    background-color: red;
+}
+
+article .elemento button.btn-aumentar {
+    background-color: green;
+}
