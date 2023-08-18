@@ -19,13 +19,20 @@
                 <input type="text" placeholder="telefono"/>
                 <input type="password" placeholder="contraseña"/>
                 <input type="password" placeholder="confirmar contraseña"/>
-                <button>Crear</button>
+                <button onclick="signup()">Crear</button>
+                <div class="home-button">
+                    <a href="index.html">Inicio</a>
+                </div>
                 <p class="message">Ya estás registrado? <a href="#">Iniciar Sesión</a></p>
             </form>
             <form class="login-form">
                 <input type="text" placeholder="email"/>
                 <input type="password" placeholder="contraseña"/>
-                <button>Ingresar</button>
+                <!-- <button onclick="login()">Ingresar</button> -->
+                <a href="controller.html">Ingresar</a>
+                <div class="home-button">
+                    <a href="index.html">Inicio</a>
+                </div>
                 <p class="message">No estás registrado? <a href="#">Crea una cuenta</a></p>
             </form>
         </div>
@@ -54,6 +61,9 @@
         });
 
     /*-----========== =========-----*/
+    function goHome() {
+        window.location.href = './index.html';
+    }
     </script>
 </body>
 </html>

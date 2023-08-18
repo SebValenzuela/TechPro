@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 .login-page {
     width: 360px;
     margin: auto;
@@ -26,7 +30,13 @@
     font-size: 14px;
 }
 
-.form button {
+.home-button {
+    display: flex;
+    margin: 20px 0 !important;
+}
+
+.form button,
+form .home-button a {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
@@ -41,7 +51,8 @@
     cursor: pointer;
 }
 
-.form button:hover, .form button:active, .form button:focus {
+.form button:hover, .form button:active, .form button:focus,
+form .home-button a:hover, form .home-button a:active, form .home-button a:focus{
     background: #4365a0;
 }
 
