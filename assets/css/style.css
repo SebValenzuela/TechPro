@@ -203,6 +203,7 @@ header a.header-link-whatsapp:hover {
 nav {
     top: 0;
     z-index: 100;
+    padding: 16px 0 !important;
     position: sticky !important;
     background-color: #001973c0;
     transition: background-color 0.3s ease;
@@ -249,6 +250,18 @@ nav a {
     background-image: url(../img/hero-bg.png);
 }
 
+@media (max-width: 991px) {
+    #hero {
+        top: -72px;
+    }
+}
+
+@media (max-width: 767px) {
+    #hero {
+        padding: 70px 0;
+    }
+}
+
 .hero-title {
     padding: 0 40px;
 }
@@ -269,6 +282,26 @@ nav a {
     margin: auto;
     border-radius: 50%;
     background-color: #ffffffcc;
+}
+
+@media (max-width: 1100px) {
+    .hero-image .circle {
+        width: 350px;
+        height: 350px;
+        margin: auto;
+        border-radius: 50%;
+        background-color: #ffffffcc;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-image .circle {
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        border-radius: 50%;
+        background-color: #ffffffcc;
+    }
 }
 
 .hero-image .circle img {
@@ -601,6 +634,12 @@ nav a {
 #exemplary-section .card img {
     width: 100%;
     max-width: 250px;
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+}
+
+#exemplary-section .card:hover img {
+    transform: scale(1.2);
 }
 
 #exemplary-section .card .card-body h5 {
@@ -612,6 +651,13 @@ nav a {
 
 #exemplary-section .card .card-body ul li {
     list-style: disc;
+    color: #4f4f4f;
+    transition: color 1s ease;
+}
+
+#exemplary-section .card:hover .card-body ul li {
+    list-style: disc;
+    color: #000000;
 }
 
 /*--------------------------------------------------------------
@@ -650,7 +696,7 @@ nav a {
 
 #services-section .card img {
     border-radius: 10px;
-    filter: grayscale(100%);
+    filter: grayscale(50%);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     transition: border-radius .5s ease-in-out, filter 1.2s ease-in-out, transform ease-in-out 1s;
@@ -664,7 +710,6 @@ nav a {
 
 #services-section .card .card-body {
     padding: 0 var(--bs-card-spacer-x);
-    ;
 }
 
 #services-section .card .card-body h5 {
