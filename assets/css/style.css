@@ -212,11 +212,11 @@ nav {
     background-color: #001973;
 }
 
-nav .container-fluid > a {
+nav .container-fluid>a {
     font-weight: 900;
 }
 
-nav .container-fluid > a img {
+nav .container-fluid>a img {
     height: 30px;
     /*border-radius: 50%;*/
     margin-left: 10px;
@@ -309,6 +309,22 @@ nav a {
 
 .card-huawei {
     background-image: url(../img/huawei.jpg);
+}
+
+.card-dell {
+    background-image: url(../img/dell.jpg);
+}
+
+.card-hp {
+    background-image: url(../img/hp.jpg);
+}
+
+.card-gear {
+    background-image: url(../img/gear.jpg);
+}
+
+.card-acer {
+    background-image: url(../img/acer.jpg);
 }
 
 .card-motorola {
@@ -511,6 +527,60 @@ nav a {
 }
 
 /*--------------------------------------------------------------
+                Exemplary Section
+--------------------------------------------------------------*/
+
+#exemplary-section {
+    padding: 3rem 0;
+}
+
+#exemplary-section .row .col {
+    display: flex;
+    justify-content: center;
+}
+
+#exemplary-section .card {
+    width: 300px;
+    overflow: hidden;
+    border: none;
+}
+
+#exemplary-section .card .card-header {
+    background-color: #eee;
+    border: none;
+}
+
+#exemplary-section .card .card-header .circle {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+#exemplary-section .card .card-header {
+    width: 100%;
+} 
+
+#exemplary-section .card img {
+    width: 100%;
+    max-width: 250px;
+}
+
+#exemplary-section .card .card-body h5 {
+    margin: 0 0 20px;
+    padding: 0;
+    color: #001973;
+    text-align: center;
+}
+
+#exemplary-section .card .card-body ul li {
+    list-style: disc;
+}
+
+/*--------------------------------------------------------------
                 Services Section
 --------------------------------------------------------------*/
 
@@ -525,15 +595,11 @@ nav a {
 
 #services-section .card {
     width: 300px;
-    height: 300px;
+    height: 350px;
     overflow: hidden;
     border-radius: 15px;
     border: solid #000 1px;
     transition: height .8s ease-in-out, border-radius .5s ease-in-out;
-}
-
-#services-section .card:hover {
-    border-radius: 50% !important;
 }
 
 #services-section .card .card-header {
@@ -548,18 +614,17 @@ nav a {
 }
 
 #services-section .card img {
-    border-radius: 15px;
+    border-radius: 10px;
     filter: grayscale(100%);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    transition: border-radius .5s ease-in-out, filter 1.2s ease-in-out;
+    transition: border-radius .5s ease-in-out, filter 1.2s ease-in-out, transform ease-in-out 1s;
 }
 
 #services-section .card:hover img {
-    border-radius: 5px;
+    border-radius: 15px;
     filter: grayscale(0%);
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    transform: scale(.9);
 }
 
 #services-section .card .card-body {
@@ -570,27 +635,38 @@ nav a {
 #services-section .card .card-body h5 {
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
-    transform: translateY(-70px);
-    transition: transform 1s ease-in-out, color .8s ease-in-out, padding 1s ease-in-out;
+    text-shadow: none;
+    transform: translateY(-100px);
+    transition: transform 1s ease-in-out, color .8s ease-in-out, padding 1s ease-in-out, text-shadow 2s ease;
 }
 
 #services-section .card:hover .card-body h5 {
     padding: 10px 0;
     text-align: center;
-    transform: translateY(-48px);
+    transform: translateY(0px);
+    color: #001973;
+    text-shadow: 0 1px 0 hsl(174, 5%, 80%),
+        0 2px 0 hsl(174, 5%, 75%),
+        0 3px 0 hsl(174, 5%, 70%),
+        0 4px 0 hsl(174, 5%, 66%),
+        0 5px 0 hsl(174, 5%, 64%),
+        0 3px 0 hsl(174, 5%, 62%),
+        0 4px 0 hsl(174, 5%, 61%),
+        0 5px 0 hsl(174, 5%, 60%),
+        0 0 5px rgba(0, 0, 0, .05),
+        0 1px 3px rgba(0, 0, 0, .2),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 8px rgba(0, 0, 0, .2),
+        0 8px 10px rgba(0, 0, 0, .2),
+        0 10px 15px rgba(0, 0, 0, .3);
 }
 
 #services-section .card .card-body p {
-    opacity: 0;
     text-align: center;
-    transform: translateY(-40px);
+    transform: translateY(10px);
     transition: opacity 2s ease-in-out;
-}
-
-#services-section .card:hover .card-body p {
-    opacity: 1;
 }
 
 #services-section .card:not(:hover) .card-body p {
@@ -616,6 +692,18 @@ footer .row .col-2 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer .trademarks,
+footer .credits,
+footer h4,
+footer a,
+footer p {
+    color: #fff;
+}
+
+footer .footer-logo img {
+    width: 200px;
 }
 
 .logo-footer,
