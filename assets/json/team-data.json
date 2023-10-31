@@ -1,0 +1,32 @@
+{
+    "team": [
+        {
+        "id": 1,
+        "name": "Ezequiel Gauto",
+        "birth": "3 de Septiembre 1999",
+        "position": "Director Ejecutivo",
+        "email": "ezegauto144@gmail.com",
+        "password": "Silvia1010"
+    },{
+        "id": 2,
+        "name": "Silvia Milagros",
+        "birth": "3 de Septiembre 1999",
+        "position": "Director Ejecutivo",
+        "email": "silvimili144@gmail.com",
+        "password": "Contraseñapordefinir"
+    },{
+        "id": 3,
+        "name": "Cesar Gauto",
+        "birth": "3 de Septiembre 1999",
+        "position": "Director Ejecutivo",
+        "email": "cesargauto@gmail.com",
+        "password": "Contraseñapordefinir2"
+    },{
+        "id": 4,
+        "name": "Fabian Aparicio",
+        "birth": "6 de Julio 1996",
+        "position": "Director Ejecutivo",
+        "email": "Fabian144@gmail.com",
+        "password": "Contraseñapordefinir3"
+    }]
+}
