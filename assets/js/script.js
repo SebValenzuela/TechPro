@@ -43,6 +43,3 @@ function aparecerElemento() {
   
   window.addEventListener("DOMContentLoaded", aparecerElemento);
   window.addEventListener("scroll", aparecerElemento);
-
-  var btnScrollTop = document.getElementById("btn-scroll-top");
-  btnScrollTop.addEventListener("click", scrollToTop);
