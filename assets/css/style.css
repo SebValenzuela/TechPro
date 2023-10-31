@@ -305,12 +305,13 @@ nav a {
     margin: auto;
     height: 180px;
     box-shadow: 0;
+    filter: grayscale(30%);
     position: relative;
     border-radius: 15px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: box-shadow .1s ease-in-out;
+    transition: box-shadow .1s ease-in-out, filter .5s ease-in-out;
 }
 
 @media (max-width: 991px) {
@@ -327,7 +328,7 @@ nav a {
 }
 
 #marks-list .row .card:hover {
-    filter: grayscale(25%);
+    filter: grayscale(0%);
     box-shadow: 0 4px 16px rgba(0, 0, 0, .5);
 }
 
