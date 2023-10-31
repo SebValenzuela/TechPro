@@ -239,16 +239,18 @@ nav a {
     top: -72px;
     height: 80vh;
     margin-top: 0;
+    display: flex;
     position: relative;
+    align-items: center;
     background-size: cover;
+    justify-content: center;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../img/hero-bg.png);
 }
 
 .hero-title {
-    position: absolute;
-    transform: translate(20%, 250%);
+    padding: 0 40px;
 }
 
 .hero-title h1,
@@ -259,6 +261,19 @@ nav a {
 .hero-title h2 span {
     color: #1D5C7A;
     font-size: 50px;
+}
+
+.hero-image .circle {
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #ffffffcc;
+}
+
+.hero-image .circle img {
+    width: calc(100% + 50px);
+    transform: translateX(-40px);
 }
 
 .cards-hero {
@@ -277,12 +292,16 @@ nav a {
                 Marks Section
 --------------------------------------------------------------*/
 
+#marks-list {
+    padding: 3rem 0;
+}
+
 #marks-list .row>div {
     margin: 2rem 0;
 }
 
 #marks-list .row .card {
-    width: 330px;
+    width: 300px;
     margin: auto;
     height: 180px;
     box-shadow: 0;
@@ -292,6 +311,19 @@ nav a {
     background-position: center;
     background-repeat: no-repeat;
     transition: box-shadow .1s ease-in-out;
+}
+
+@media (max-width: 991px) {
+    #marks-list .row .card {
+        width: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    #marks-list .row .card {
+        width: 400px;
+        height: 250px;
+    }
 }
 
 #marks-list .row .card:hover {
@@ -541,6 +573,7 @@ nav a {
 
 #exemplary-section .card {
     width: 300px;
+    margin: 20px auto;
     overflow: hidden;
     border: none;
 }
@@ -596,6 +629,7 @@ nav a {
 #services-section .card {
     width: 300px;
     height: 350px;
+    margin: 20px auto;
     overflow: hidden;
     border-radius: 15px;
     border: solid #000 1px;
