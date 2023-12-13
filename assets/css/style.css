@@ -755,6 +755,24 @@ nav a {
 }
 
 /*--------------------------------------------------------------
+                Payment Section
+--------------------------------------------------------------*/
+
+.data-payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-payment ul {
+    text-align: left;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #cacaca;
+}
+
+/*--------------------------------------------------------------
                 Footer
 --------------------------------------------------------------*/
 
