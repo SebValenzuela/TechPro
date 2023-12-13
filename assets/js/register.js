@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         fetch('assets/json/team-data.json')
             .then(response => response.json())
             .then(data => {
-                checkAndRedirect(data.team, emailInput.value, passwordInput.value, '../../admin/controller.html');
+                checkAndRedirect(data.team, emailInput.value, passwordInput.value, '../../admin/dashboard.html');
             })
             .catch(error => {
                 console.error('Error al cargar el archivo JSON de equipo:', error);
