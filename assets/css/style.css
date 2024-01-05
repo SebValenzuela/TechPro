@@ -156,7 +156,8 @@ header a p {
     margin: 0;
     padding: 0;
     transition: .5s;
-    color: #fff;
+    left: 0.6em;
+    color: #fff
 }
 
 header a i {
@@ -169,11 +170,6 @@ header a i {
     height: 1em;
     fill: #fff;
     color: #fff;
-}
-
-header a:hover p {
-    left: 0.6em;
-    color: #fff
 }
 
 header a.header-link-instagram:hover {
