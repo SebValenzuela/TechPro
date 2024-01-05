@@ -19,28 +19,27 @@
     <header>
         <div class="row">
             <div class="col">
-                <ul class="row m-0">
-                    <li class="col-3">
+                <ul class="d-flex m-0">
+                    <li>
                         <a class="header-link-instagram" target="_blank" href="https://www.instagram.com/techpro_cl/">
                             <p>Instagram</p>
                             <i class="fa-brands fa-instagram"></i>
                         </a>
                     </li>
-                    <li class="col-3">
+                    <li>
                         <a class="header-link-facebook" target="_blank" href="https://www.facebook.com/Polirubro121398">
                             <p>Facebook</p>
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
                     </li>
-                    <li class="col-3">
-                        <a class="header-link-whatsapp" target="_blank" href="https://api.whatsapp.com/send/?phone=56946683758&text&app_absent=0">
+                    <li>
+                        <a class="header-link-whatsapp" target="_blank" href="https://api.whatsapp.com/send/?phone=56926041091&text&app_absent=0">
                             <p>Whatsapp</p>
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="col"></div>
         </div>
     </header>
 
@@ -59,7 +58,7 @@
                         <a class="nav-link" href="#marks-list">Marcas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#exemplary-section">Ejemplares</a>
+                        <a class="nav-link" href="#exemplary-section">Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services-section">Servicios</a>
@@ -80,7 +79,7 @@
 
     <a href="https://www.instagram.com/techpro_cl/" id="btn-scroll-top-instagram" class="btn-scroll-top btn-scroll-element" target="_blank"><i class="fa-brands fa-instagram"></i></a>
     <a href="https://www.facebook.com/Polirubro121398" id="btn-scroll-top-facebook" class="btn-scroll-top btn-scroll-element" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-    <a href="https://api.whatsapp.com/send/?phone=56946683758&text&app_absent=0" id="btn-scroll-top-whatsapp" class="btn-scroll-top btn-scroll-element" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://api.whatsapp.com/send/?phone=56926041091&text&app_absent=0" id="btn-scroll-top-whatsapp" class="btn-scroll-top btn-scroll-element" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
     <a href="#" id="btn-scroll-top-scroll" class="btn-scroll-top btn-scroll-element"><i class="fa-solid fa-arrow-up"></i></a>
 
     <main>
@@ -184,7 +183,7 @@
                         </div>
                         <div class="card-body">
                             <h5>Entregas</h5>
-                            <p class="m-0 fade-up">Hacemos envios a domicilio por vía Starken y Chilexpres en la capital y a lass distintaspartes del pais.</p>
+                            <p class="m-0 fade-up">Hacemos envios a domicilio por vía Starken y Chilexpres en la capital y a las distintas partes del pais.</p>
                         </div>
                     </div>
                 </div>
@@ -206,70 +205,98 @@
 
         <section id="exemplary-section">
             <div class="title-section fade-up">
-                <span>Ejemplares</span>
-                <h4 class="text-center mb-2">Ejemplares</h4>
+                <span>Productos</span>
+                <h4 class="text-center mb-2">Productos</h4>
             </div>
-            <div class="row">
-                <div class="col fade-up">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="circle">
-                                <img src="assets/img/hp-elitebook.png" alt="">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+                        role="tab" aria-controls="home-tab-pane" aria-selected="true">Computadores</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+                        role="tab" aria-controls="profile-tab-pane" aria-selected="false">Consolas</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button"
+                        role="tab" aria-controls="contact-tab-pane" aria-selected="false">Celulares</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
+                        type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Accesorios</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col fade-up">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="circle">
+                                        <img src="assets/img/hp-elitebook.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5>Notebook Hp Elitebook Folio 9480m</h5>
+                                    <ul>
+                                        <li>Procesador Intel Core i5-4310U 2.6GHz</li>
+                                        <li>Memoria ram 8gb</li>
+                                        <li>Almacenamiento 500gb</li>
+                                        <li>Teclado retroiluminado</li>
+                                        <li>Huella dactilar</li>
+                                        <li>Paquete office instalado</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h5>Notebook Hp Elitebook Folio 9480m</h5>
-                            <ul>
-                                <li>Procesador Intel Core i5-4310U 2.6GHz</li>
-                                <li>Memoria ram 8gb</li>
-                                <li>Almacenamiento 500gb</li>
-                                <li>Teclado retroiluminado</li>
-                                <li>Huella dactilar</li>
-                                <li>Paquete office instalado</li>
-                            </ul>
+                        <div class="col fade-up">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="circle">
+                                        <img src="assets/img/probook.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5>Notebook Probook 440 G5</h5>
+                                    <ul>
+                                        <li>Procesador Intel Core i5-8265</li>
+                                        <li>8 Núcleos</li>
+                                        <li>Memoria ram 8gb</li>
+                                        <li>Almacenamiento 256gb</li>
+                                        <li>Tarjeta grafica Intel(R) UHD Graphics 620</li>
+                                        <li>Paquete office instalado Word, Excel, Powerpoint</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col fade-up">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="circle">
+                                        <img src="assets/img/dell-latitude.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5>Dell Latitude E5470</h5>
+                                    <ul>
+                                        <li>Procesador Intel Core i5-6300U</li>
+                                        <li>2.40GHz ~2.50GHz (4CPUs)</li>
+                                        <li>Memoria ram 8GB</li>
+                                        <li>256gb Disco Solido</li>
+                                        <li>Tarjeta grafica Intel HD Graphics 520</li>
+                                        <li>Cargador original</li>
+                                        <li>Paquete office instalado</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col fade-up">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="circle">
-                                <img src="assets/img/probook.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5>Notebook Probook 440 G5</h5>
-                            <ul>
-                                <li>Procesador Intel Core i5-8265</li>
-                                <li>8 Núcleos</li>
-                                <li>Memoria ram 8gb</li>
-                                <li>Almacenamiento 256gb</li>
-                                <li>Tarjeta grafica Intel(R) UHD Graphics 620</li>
-                                <li>Paquete office instalado Word, Excel, Powerpoint</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...
                 </div>
-                <div class="col fade-up">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="circle">
-                                <img src="assets/img/dell-latitude.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5>Dell Latitude E5470</h5>
-                            <ul>
-                                <li>Procesador Intel Core i5-6300U</li>
-                                <li>2.40GHz ~2.50GHz (4CPUs)</li>
-                                <li>Memoria ram 8GB</li>
-                                <li>256gb Disco Solido</li>
-                                <li>Tarjeta grafica Intel HD Graphics 520</li>
-                                <li>Cargador original</li>
-                                <li>Paquete office instalado</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...
+                </div>
+                <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...
                 </div>
             </div>
         </section>
@@ -286,20 +313,23 @@
                     <div data-post-id="1743" class="insert-page insert-page-1743 ">
                         <h4>Transferencia o Efectivo.</h4>
                         <p id="normal">Se puede pagar el 100% del curso, o bien, abonar al menos $20.000 para reservar el cupo.
-                            El valor total debe estar pagado 48 horas antes que comience el curso. El abono no es reembolsable a
-                            menos de una semana antes del inicio del curso.</p>
+                            El valor total debe estar pagado 48 horas antes que comience el curso.</p>
                         <small><b>Recordatorio:</b> Tienes 3 meses de garantia para cambiar o arreglar el producto, la garantia no incluye <b>'Golpes'</b>, <b>'Derramamiento de liquido'</b>, etc.</small>
                         <br>
                         <br>
                         <div class="data-payment">
                             <ul>
-                                <li>Empresa: Club de Fotografía Ltda.</li>
-                                <li>RUT: 76671708-K</li>
-                                <li>Cuenta Corriente: 73561000</li>
-                                <li>Banco Santander</li>
-                                <li>Email: pagos@clubdefotografia.com</li>
+                                <li>Nombre: Andres Valenzuela</li>
+                                <li>RUT: 77.504.283-4</li>
+                                <li>Cuenta Vista: 1041702760</li>
+                                <li>Mercado Pago</li>
+                                <li>Email: nemobuscando11@gmail.com</li>
                             </ul>
                         </div>
+
+                        <p id="normal">Contacta con nuestro equipo para confirmar tu pago y enviar tu nuevo equipo.</p>
+
+                        <a class="contact-pay" href="https://api.whatsapp.com/send/?phone=56926041091&text&app_absent=0"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
                     </div>
                 </div>
             </div>
@@ -666,7 +696,7 @@
                         <h4>Nuestros Servicios</h4>
                         <ul class="p-0">
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Inicio</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Ejemplares</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Productos</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Marcas</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Servicios</a></li>
                             <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
@@ -680,7 +710,7 @@
                                 Gral. Baquedano 775,<br>
                                 Santiago<br><br>
                             </a>
-                            <strong>Teléfono:</strong> <a href="tel:+56226883201">+56 9 3458 8679</a><br>
+                            <strong>Teléfono:</strong> <a href="tel:+56926041091">+56 9 2604 1091</a><br>
                             <strong>Email:</strong> <a href="mailto:techpro.spa@gmail.com">techpro.spa@gmail.com</a><br>
                         </p>
     
@@ -805,6 +835,32 @@
         });
 
         splide.mount(window.splide.Extensions);
+
+
+
+        var navbarCollapse = document.querySelector('.navbar-collapse');
+
+// Obtener referencia al elemento hero
+var hero = document.getElementById('hero');
+
+// Agregar un evento que se dispare cuando cambie la clase del navbar
+navbarCollapse.addEventListener('transitionend', function() {
+    // Verificar si la clase 'show' está presente en el navbar
+    var isNavbarVisible = navbarCollapse.classList.contains('show');
+
+    // Ajustar el estilo del hero en consecuencia
+    hero.style.top = isNavbarVisible ? '-112px' : '-72px';
+});
+
+// También puedes agregar un controlador de eventos para el botón del navbar (opcional)
+var navbarToggle = document.querySelector('.navbar-toggler');
+navbarToggle.addEventListener('click', function() {
+    // Verificar si el navbar tiene la clase 'show' después de hacer clic en el botón
+    var isNavbarVisible = navbarCollapse.classList.contains('show');
+
+    // Ajustar el estilo del hero en consecuencia
+    hero.style.top = isNavbarVisible ? '-112px' : '-72px';
+});
     </script>
 </body>
 </html>

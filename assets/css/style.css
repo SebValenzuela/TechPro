@@ -250,12 +250,6 @@ nav a {
     background-image: url(../img/hero-bg.png);
 }
 
-@media (max-width: 991px) {
-    #hero {
-        top: -72px;
-    }
-}
-
 @media (max-width: 767px) {
     #hero {
         padding: 70px 0;
@@ -643,8 +637,8 @@ nav a {
 }
 
 #exemplary-section .card .card-body h5 {
-    margin: 0 0 20px;
     padding: 0;
+    margin: 0 0 20px;
     color: #001973;
     text-align: center;
 }
@@ -658,6 +652,26 @@ nav a {
 #exemplary-section .card:hover .card-body ul li {
     list-style: disc;
     color: #000000;
+}
+
+#exemplary-section #myTab {
+    margin: auto;
+    width: fit-content;
+    background-color: #fff;
+    border-radius: 15px;
+    justify-content: center;
+    border: solid #000 1px;
+}
+
+#exemplary-section #myTab button {
+    border: 0;
+    color: #000;
+    background-color: transparent;
+}
+
+#exemplary-section #myTab button.active {
+    text-decoration: underline;
+    color: var(--bs-nav-link-color);
 }
 
 /*--------------------------------------------------------------
@@ -770,6 +784,15 @@ nav a {
     padding: 10px 20px;
     border-radius: 15px;
     background-color: #cacaca;
+}
+
+.contact-pay {
+    color: #fff;
+    border: solid #fff;
+    border-radius: 15px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #25D366;
 }
 
 /*--------------------------------------------------------------
